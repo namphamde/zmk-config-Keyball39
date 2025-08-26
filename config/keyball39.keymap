@@ -75,10 +75,10 @@
         number_layer {
             label = "NUM";
             bindings = <
-&kp NUMBER_1      &kp NUMBER_2  &kp NUMBER_3      &kp NUMBER_4      &kp NUMBER_5                         &kp NUMBER_6         &kp NUMBER_7      &kp NUMBER_8       &kp NUMBER_9     &kp NUMBER_0
-&kp LS(NUMBER_7)  &kp LA(Q)     &kp LA(NUMBER_7)  &kp LS(NUMBER_8)  &kp LEFT_BRACKET                     &kp LA(NON_US_BSLH)  &kp LS(NUMBER_9)  &kp LA(NUMBER_0)   &kp LS(MINUS)    &kp LA(MINUS)
-&kp GRAVE         &kp LA(E)     &kp NON_US_BSLH   &kp LA(NUMBER_8)  &kp SEMI                             &kp SINGLE_QUOTE     &kp LA(NUMBER_9)  &kp LS(BACKSLASH)  &kp NON_US_HASH  &kp EQUAL
-&trans            &trans        &trans            &trans            &trans            &trans  &kp MINUS  &kp DELETE                                                                 &trans
+&kp NUMBER_1            &kp NUMBER_2     &kp NUMBER_3           &kp NUMBER_4           &kp NUMBER_5                         &kp NUMBER_6         &kp NUMBER_7           &kp NUMBER_8           &kp NUMBER_9         &kp NUMBER_0
+&mt LSHFT LS(NUMBER_7)  &mt LCTRL LA(Q)  &mt LALT LA(NUMBER_7)  &mt LGUI LS(NUMBER_8)  &kp LEFT_BRACKET                     &kp LA(NON_US_BSLH)  &mt RGUI LS(NUMBER_9)  &mt RALT LA(NUMBER_0)  &mt RCTRL LS(MINUS)  &mt RSHFT LA(MINUS)
+&kp GRAVE               &kp LA(E)        &kp NON_US_BSLH        &kp LA(NUMBER_8)       &kp SEMI                             &kp SINGLE_QUOTE     &kp LA(NUMBER_9)       &kp LS(BACKSLASH)      &kp NON_US_HASH      &kp EQUAL
+&trans                  &trans           &trans                 &trans                 &trans            &trans  &kp MINUS  &kp DELETE                                                                              &trans
             >;
         };
 
@@ -105,10 +105,10 @@
         mouse_layer {
             label = "MOUSE";
             bindings = <
-&none     &mkp MB2   &mkp MB3   &none   &none                   &kp N6         &kp N7     &kp N8  &kp N9     &kp N0
-&mkp MB1  &mkp LCLK  &mkp RCLK  &none   &none                   &kp PAGE_UP    &mkp LCLK  &none   &mkp RCLK  &mkp MCLK
-&none     &none      &none      &none   &none                   &kp PAGE_DOWN  &none      &none   &none      &none
-&trans    &trans     &trans     &trans  &trans  &trans  &trans  &mo 3                                        &none
+&mkp MB1      &mkp MB2   &mkp MB3   &none   &none                   &kp N6         &kp N7     &kp N8  &kp N9     &kp N0
+&lt 5 RSHIFT  &mkp LCLK  &mkp RCLK  &none   &none                   &kp PAGE_UP    &mkp LCLK  &none   &mkp RCLK  &mkp MCLK
+&none         &none      &none      &none   &none                   &kp PAGE_DOWN  &none      &none   &none      &none
+&trans        &trans     &trans     &trans  &trans  &trans  &trans  &mo 3                                        &none
             >;
         };
 
