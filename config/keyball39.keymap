@@ -75,10 +75,10 @@
         number_layer {
             label = "NUM";
             bindings = <
-&kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5                  &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0
-&kp LEFT      &kp DOWN      &kp UP_ARROW  &kp RIGHT     &none                         &none         &none         &none         &none         &none
-&none         &none         &none         &none         &none                         &none         &none         &trans        &trans        &none
-&trans        &trans        &trans        &trans        &trans        &trans  &trans  &trans                                                  &trans
+&kp NUMBER_1      &kp NUMBER_2  &kp NUMBER_3      &kp NUMBER_4      &kp NUMBER_5                         &kp NUMBER_6       &kp NUMBER_7      &kp NUMBER_8       &kp NUMBER_9     &kp NUMBER_0
+&kp LS(NUMBER_7)  &kp LA(Q)     &kp LA(NUMBER_7)  &kp LS(NUMBER_8)  &kp LEFT_BRACKET                     &kp LA(BACKSLASH)  &kp NUMBER_9      &kp LA(NUMBER_0)   &kp LS(MINUS)    &kp LA(MINUS)
+&kp TILDE         &kp LA(E)     &kp BACKSLASH     &kp LA(NUMBER_8)  &kp SEMI                             &kp ASTERISK       &kp LA(NUMBER_9)  &kp LS(BACKSLASH)  &kp NON_US_HASH  &kp EQUAL
+&trans            &trans        &trans            &trans            &trans            &trans  &kp MINUS  &kp DELETE                                                               &trans
             >;
         };
 
