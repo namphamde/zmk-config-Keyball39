@@ -36,7 +36,7 @@ layers:
   - '&mkp MB2'
   - $$mdi:keyboard-esc$$
   - $$mdi:keyboard-tab$$
-  - {t: 'Alt+$$mdi:keyboard-space$$', h: NUM}
+  - {t: '$$mdi:keyboard-space$$', h: NUM}
   - {t: '$$mdi:keyboard-return$$', h: FUN}
   - {t: '$$mdi:backspace$$', type: backspace}
   - {t: '$$mdi:apple-keyboard-shift$$', h: SCROLL}
@@ -56,17 +56,17 @@ layers:
   - Alt+7
   - Sft+8
   - {t: '[', s: '{'}
-  - {t: Alt+\, s: Alt+|}
-  - '9'
+  - Alt+|
+  - Sft+9
   - Alt+0
   - {t: Sft+-, s: Sft+_}
   - {t: Alt+-, s: Alt+_}
-  - '~'
+  - {t: '`', s: '~'}
   - Alt+E
-  - {t: \, s: '|'}
+  - '|'
   - Alt+8
   - {t: ;, s: ':'}
-  - '*'
+  - {t: '''', s: '"'}
   - Alt+9
   - {t: Sft+\, s: Sft+|}
   - '#'
