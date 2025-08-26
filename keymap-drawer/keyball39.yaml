@@ -51,16 +51,16 @@ layers:
   - '8'
   - '9'
   - '0'
-  - Sft+7
-  - Alt+Q
-  - Alt+7
-  - Sft+8
+  - {t: Sft+7, h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: Alt+Q, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: Alt+7, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: Sft+8, h: LGUI}
   - {t: '[', s: '{'}
   - Alt+|
-  - Sft+9
-  - Alt+0
-  - {t: Sft+-, s: Sft+_}
-  - {t: Alt+-, s: Alt+_}
+  - {t: Sft+9, h: RGUI}
+  - {t: Alt+0, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: Sft+-, h: '$$mdi:apple-keyboard-control$$', s: Sft+_}
+  - {t: Alt+-, h: '$$mdi:apple-keyboard-shift$$', s: Alt+_}
   - {t: '`', s: '~'}
   - Alt+E
   - '|'
@@ -161,7 +161,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   MOUSE:
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - '&mkp MB1'
   - '&mkp MB2'
   - '&mkp MB3'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -171,7 +171,7 @@ layers:
   - {t: '8', s: '*'}
   - {t: '9', s: (}
   - {t: '0', s: )}
-  - '&mkp MB1'
+  - {t: '$$mdi:apple-keyboard-shift$$', h: SCROLL}
   - $$mdi:mouse-left-click-outline$$
   - $$mdi:mouse-right-click-outline$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -211,11 +211,11 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held alternate}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held alternate}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
