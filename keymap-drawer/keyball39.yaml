@@ -31,9 +31,9 @@ layers:
   - {t: ',', s: <}
   - {t: ., s: '>'}
   - {t: /, s: '?'}
+  - {t: '$$mdi:apple-keyboard-shift$$', h: SNIPE}
   - $$mdi:mouse-left-click-outline$$
-  - '&mkp MB1'
-  - '&mkp MB2'
+  - $$mdi:mouse-right-click-outline$$
   - {t: '$$mdi:keyboard-esc$$', h: MOUSE}
   - $$mdi:keyboard-tab$$
   - {t: '$$mdi:keyboard-space$$', h: NUM}
@@ -63,12 +63,12 @@ layers:
   - {t: Alt+-, h: '$$mdi:apple-keyboard-shift$$', s: Alt+_}
   - {t: '`', s: '~'}
   - Alt+E
-  - '|'
+  - <
   - Alt+8
   - {t: ;, s: ':'}
   - {t: '''', s: '"'}
   - Alt+9
-  - {t: Sft+\, s: Sft+|}
+  - '>'
   - '#'
   - {t: '=', s: +}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -271,7 +271,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
