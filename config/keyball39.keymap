@@ -65,10 +65,10 @@
         default_layer {
             label = "QWRT";
             bindings = <
-&kp Q        &kp W        &kp E       &kp R       &kp T                              &kp Y          &kp U       &kp I       &kp O        &kp P
-&mt LSHFT A  &mt LCTRL S  &mt LALT D  &mt LGUI F  &lt 4 G                            &kp H          &mt RGUI J  &mt RALT K  &mt RCTRL L  &mt RSHFT RBKT
-&kp Z        &kp X        &kp C       &kp V       &kp B                              &kp N          &kp M       &kp COMMA   &kp DOT      &kp SLASH
-&mkp LCLK    &mkp MB1     &mkp MB2    &kp ESCAPE  &kp TAB  &lt 1 SPACE  &lt 3 ENTER  &kp BACKSPACE                                       &lt 5 RSHFT
+&kp Q        &kp W        &kp E       &kp R         &kp T                              &kp Y          &kp U       &kp I       &kp O        &kp P
+&mt LSHFT A  &mt LCTRL S  &mt LALT D  &mt LGUI F    &kp G                              &kp H          &mt RGUI J  &mt RALT K  &mt RCTRL L  &mt RSHFT RBKT
+&kp Z        &kp X        &kp C       &kp V         &kp B                              &kp N          &kp M       &kp COMMA   &kp DOT      &kp SLASH
+&mkp LCLK    &mkp MB1     &mkp MB2    &lt 4 ESCAPE  &kp TAB  &lt 1 SPACE  &lt 3 ENTER  &kp BACKSPACE                                       &lt 5 RSHFT
             >;
         };
 
@@ -105,10 +105,10 @@
         mouse_layer {
             label = "MOUSE";
             bindings = <
-&mkp MB1      &mkp MB2   &mkp MB3   &none   &none                   &kp N6         &kp N7     &kp N8  &kp N9     &kp N0
-&lt 5 RSHIFT  &mkp LCLK  &mkp RCLK  &none   &none                   &kp PAGE_UP    &mkp LCLK  &none   &mkp RCLK  &mkp MCLK
-&none         &none      &none      &none   &none                   &kp PAGE_DOWN  &none      &none   &none      &none
-&trans        &trans     &trans     &trans  &trans  &trans  &trans  &mo 3                                        &none
+&none         &mkp MB3   &mkp MB1   &mkp MB2   &none                   &none  &kp PG_UP      &kp K_SCROLL_UP    &none  &kp N0
+&lt 5 LSHIFT  &mkp MCLK  &mkp LCLK  &mkp RCLK  &none                   &none  &kp PAGE_DOWN  &kp K_SCROLL_DOWN  &none  &none
+&none         &none      &none      &none      &none                   &none  &none          &none              &none  &none
+&trans        &trans     &trans     &trans     &trans  &trans  &trans  &none                                           &none
             >;
         };
 
