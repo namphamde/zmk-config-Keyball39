@@ -76,8 +76,8 @@
             label = "NUM";
             bindings = <
 &kp NUMBER_1            &kp NUMBER_2     &kp NUMBER_3           &kp NUMBER_4           &kp NUMBER_5                         &kp NUMBER_6      &kp NUMBER_7           &kp NUMBER_8           &kp NUMBER_9         &kp NUMBER_0
-&mt LSHFT LS(NUMBER_7)  &mt LCTRL LA(Q)  &mt LALT LA(NUMBER_7)  &mt LGUI LS(NUMBER_8)  &kp LEFT_BRACKET                     &kp LA(NUBS)      &mt RGUI LS(NUMBER_9)  &mt RALT LA(NUMBER_0)  &mt RCTRL LS(MINUS)  &mt RSHFT LA(MINUS)
-&kp GRAVE               &kp LA(E)        &kp NUBS               &kp LA(NUMBER_8)       &kp SEMI                             &kp SINGLE_QUOTE  &kp LA(NUMBER_9)       &kp LS(NUBS)           &kp NON_US_HASH      &kp EQUAL
+&mt LSHFT LS(NUMBER_7)  &mt LCTRL LA(Q)  &mt LALT LA(NUMBER_7)  &mt LGUI LS(NUMBER_8)  &kp LEFT_BRACKET                     &kp LA(GRAVE)     &mt RGUI LS(NUMBER_9)  &mt RALT LA(NUMBER_0)  &mt RCTRL LS(MINUS)  &mt RSHFT LA(MINUS)
+&kp NUBS                &kp LA(E)        &kp GRAVE              &kp LA(NUMBER_8)       &kp SEMI                             &kp SINGLE_QUOTE  &kp LA(NUMBER_9)       &kp LS(GRAVE)          &kp NON_US_HASH      &kp EQUAL
 &trans                  &trans           &trans                 &trans                 &trans            &trans  &kp MINUS  &kp DELETE                                                                           &trans
             >;
         };
