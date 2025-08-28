@@ -56,19 +56,19 @@ layers:
   - {t: Alt+7, h: '$$mdi:apple-keyboard-option$$'}
   - {t: Sft+8, h: LGUI}
   - {t: '[', s: '{'}
-  - Alt+NUBS
+  - {t: Alt+`, s: Alt+~}
   - {t: Sft+9, h: RGUI}
   - {t: Alt+0, h: '$$mdi:apple-keyboard-option$$'}
   - {t: Sft+-, h: '$$mdi:apple-keyboard-control$$', s: Sft+_}
   - {t: Alt+-, h: '$$mdi:apple-keyboard-shift$$', s: Alt+_}
-  - {t: '`', s: '~'}
-  - Alt+E
   - NUBS
+  - Alt+E
+  - {t: '`', s: '~'}
   - Alt+8
   - {t: ;, s: ':'}
   - {t: '''', s: '"'}
   - Alt+9
-  - Sft+NUBS
+  - {t: Sft+`, s: Sft+~}
   - '#'
   - {t: '=', s: +}
   - {t: '$$mdi:transfer$$', type: trans}
