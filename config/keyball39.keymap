@@ -95,7 +95,7 @@
         function_layer {
             label = "FUN";
             bindings = <
-&none   &none   &none   &none         &kp PAGE_UP                      &kp LG(LEFT)   &kp LA(LEFT)  &kp UP    &kp LA(RIGHT)  &kp F12
+&trans  &trans  &trans  &trans        &kp PAGE_UP                      &kp LG(LEFT)   &kp LA(LEFT)  &kp UP    &kp LA(RIGHT)  &kp F12
 &trans  &trans  &trans  &trans        &kp PAGE_DOWN                    &kp LG(RIGHT)  &kp LEFT      &kp DOWN  &kp RIGHT      &kp F11
 &kp F1  &kp F2  &kp F3  &kp F4        &kp F5                           &kp F6         &kp F7        &kp F8    &kp F9         &kp F10
 &trans  &trans  &trans  &kp C_VOL_DN  &kp C_VOLUME_UP  &trans  &trans  &trans                                                &trans
@@ -125,10 +125,10 @@
         snipe_layer {
             label = "SNIPE";
             bindings = <
-&trans  &trans  &trans  &trans  &bootloader                  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans                       &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans                       &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans       &trans  &trans  &trans                          &trans
+&trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans                          &trans
             >;
         };
     };
