@@ -62,17 +62,17 @@
     keymap {
         compatible = "zmk,keymap";
 
-        default_layer {
-            label = "QWRT";
+        mac_default {
+            label = "MAC";
             bindings = <
-&kp Q         &kp W         &kp E         &kp R         &kp T                              &kp Y          &kp U       &kp I       &kp O        &kp P
-&mt LSHFT A   &mt LCTRL S   &mt LALT D    &mt LGUI F    &kp G                              &kp H          &mt RGUI J  &mt RALT K  &mt RCTRL L  &mt RSHFT RBKT
-&kp Z         &kp X         &kp C         &kp V         &kp B                              &kp N          &kp M       &kp COMMA   &kp DOT      &kp SLASH
-&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &lt 6 ESCAPE  &kp TAB  &lt 1 SPACE  &lt 3 ENTER  &kp BACKSPACE                                       &bt BT_CLR
+&kp Q        &kp W        &kp E       &kp R         &kp T                              &kp Y          &kp U       &kp I       &kp O        &kp P
+&mt LSHFT A  &mt LCTRL S  &mt LALT D  &mt LGUI F    &kp G                              &kp H          &mt RGUI J  &mt RALT K  &mt RCTRL L  &mt RSHFT RBKT
+&kp Z        &kp X        &kp C       &kp V         &kp B                              &kp N          &kp M       &kp COMMA   &kp DOT      &kp SLASH
+&bt BT_NXT   &to 6        &none       &lt 5 ESCAPE  &kp TAB  &lt 1 SPACE  &lt 2 ENTER  &kp BACKSPACE                                       &bt BT_CLR
             >;
         };
 
-        number_layer {
+        num_layer {
             label = "NUM";
             bindings = <
 &kp NUMBER_1            &kp NUMBER_2     &kp NUMBER_3           &kp NUMBER_4           &kp NUMBER_5                         &kp NUMBER_6      &kp NUMBER_7           &kp NUMBER_8           &kp NUMBER_9         &kp NUMBER_0
@@ -82,31 +82,21 @@
             >;
         };
 
-        symbol_layer {
-            label = "SYM";
-            bindings = <
-&kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5                  &kp NUMBER_6    &kp NUMBER_7  &kp NUMBER_8      &kp NUMBER_9       &kp NUMBER_0
-&bt BT_CLR    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &trans                        &kp MINUS       &kp EQUAL     &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp SQT
-&trans        &trans        &trans        &trans        &trans                        &kp UNDERSCORE  &kp PLUS      &trans            &trans             &kp NON_US_BACKSLASH
-&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &trans        &trans        &trans  &trans  &trans                                                             &trans
-            >;
-        };
-
-        function_layer {
+        mac_func {
             label = "FUN";
             bindings = <
-&trans  &trans  &trans  &trans        &kp PAGE_UP                      &kp LG(LEFT)   &kp LA(LEFT)  &kp UP    &kp LA(RIGHT)  &kp F12
-&trans  &trans  &trans  &trans        &kp PAGE_DOWN                    &kp LG(RIGHT)  &kp LEFT      &kp DOWN  &kp RIGHT      &kp F11
-&kp F1  &kp F2  &kp F3  &kp F4        &kp F5                           &kp F6         &kp F7        &kp F8    &kp F9         &kp F10
-&trans  &trans  &trans  &kp C_VOL_DN  &kp C_VOLUME_UP  &trans  &trans  &trans                                                &trans
+&kp LG(X)  &kp LG(C)  &kp LG(V)  &kp LC(UP_ARROW)  &kp PAGE_UP                      &kp LG(LEFT)   &kp LA(LEFT)  &kp UP    &kp LA(RIGHT)  &kp F12
+&trans     &trans     &trans     &trans            &kp PAGE_DOWN                    &kp LG(RIGHT)  &kp LEFT      &kp DOWN  &kp RIGHT      &kp F11
+&kp F1     &kp F2     &kp F3     &kp F4            &kp F5                           &kp F6         &kp F7        &kp F8    &kp F9         &kp F10
+&trans     &trans     &trans     &kp C_VOL_DN      &kp C_VOLUME_UP  &trans  &trans  &trans                                                &trans
             >;
         };
 
         mouse_layer {
             label = "MOUSE";
             bindings = <
-&lt 6 LSHIFT  &mkp MB3   &mkp MB1   &mkp MB2   &none                   &none   &kp PG_UP      &kp K_SCROLL_UP    &none  &none
-&lt 5 LSHIFT  &mkp MCLK  &mkp LCLK  &mkp RCLK  &none                   &none   &kp PAGE_DOWN  &kp K_SCROLL_DOWN  &none  &none
+&lt 5 LSHIFT  &mkp MB3   &mkp MB1   &mkp MB2   &none                   &none   &kp PG_UP      &kp K_SCROLL_UP    &none  &none
+&lt 4 LSHIFT  &mkp MCLK  &mkp LCLK  &mkp RCLK  &none                   &none   &kp PAGE_DOWN  &kp K_SCROLL_DOWN  &none  &none
 &none         &none      &none      &none      &none                   &none   &none          &none              &none  &none
 &trans        &trans     &trans     &trans     &trans  &trans  &trans  &trans                                           &trans
             >;
@@ -129,6 +119,26 @@
 &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans                          &trans
+            >;
+        };
+
+        win_default {
+            label = "WIN";
+            bindings = <
+&kp Q        &kp W        &kp E       &kp R         &kp T                              &kp Y          &kp U       &kp I       &kp O        &kp P
+&mt LSHFT A  &mt LCTRL S  &mt LALT D  &mt LGUI F    &kp G                              &kp H          &mt RGUI J  &mt RALT K  &mt RCTRL L  &mt RSHFT RBKT
+&kp Z        &kp X        &kp C       &kp V         &kp B                              &kp N          &kp M       &kp COMMA   &kp DOT      &kp SLASH
+&bt BT_NXT   &to 0        &none       &lt 5 ESCAPE  &kp TAB  &lt 1 SPACE  &lt 7 ENTER  &kp BACKSPACE                                       &bt BT_CLR
+            >;
+        };
+
+        win_func {
+            label = "WFUN";
+            bindings = <
+&kp LC(X)  &kp LC(C)  &kp LC(V)  &kp LG(TAB)   &kp PAGE_UP                      &kp HOME  &kp LC(LEFT)  &kp UP    &kp LC(RIGHT)  &kp F12
+&trans     &trans     &trans     &trans        &kp PAGE_DOWN                    &kp END   &kp LEFT      &kp DOWN  &kp RIGHT      &kp F11
+&kp F1     &kp F2     &kp F3     &kp F4        &kp F5                           &kp F6    &kp F7        &kp F8    &kp F9         &kp F10
+&trans     &trans     &trans     &kp C_VOL_DN  &kp C_VOLUME_UP  &trans  &trans  &trans                                           &trans
             >;
         };
     };
