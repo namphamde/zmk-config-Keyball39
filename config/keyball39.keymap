@@ -62,7 +62,7 @@
         compatible = "zmk,keymap";
 
         mac_default {
-            label = "MAC";
+            label = "DEFAULT";
             bindings = <
 &kp Q        &kp W        &kp E       &kp R         &kp T                              &kp Y          &kp U       &kp I       &kp O        &kp P
 &mt LSHFT A  &mt LCTRL S  &mt LALT D  &mt LGUI F    &kp G                              &kp H          &mt RGUI J  &mt RALT K  &mt RCTRL L  &mt RSHFT RBKT
