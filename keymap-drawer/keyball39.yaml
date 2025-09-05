@@ -1,6 +1,6 @@
 layout: {zmk_keyboard: keyball39}
 layers:
-  DEFAULT:
+  QWRT:
   - Q
   - W
   - E
@@ -272,7 +272,7 @@ layers:
   - {t: ., s: '>'}
   - {t: /, s: '?'}
   - {h: '$$mdi:arrow-down-bold$$', s: '$$mdi:bluetooth-connect$$'}
-  - {t: DEFAULT, h: toggle}
+  - {t: QWRT, h: toggle}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:keyboard-esc$$', h: SNIPE}
   - $$mdi:keyboard-tab$$
