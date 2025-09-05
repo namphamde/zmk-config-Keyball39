@@ -67,7 +67,7 @@
 &kp Q        &kp W        &kp E       &kp R         &kp T                              &kp Y          &kp U       &kp I       &kp O        &kp P
 &mt LSHFT A  &mt LCTRL S  &mt LALT D  &mt LGUI F    &kp G                              &kp H          &mt RGUI J  &mt RALT K  &mt RCTRL L  &mt RSHFT RBKT
 &kp Z        &kp X        &kp C       &kp V         &kp B                              &kp N          &kp M       &kp COMMA   &kp DOT      &kp SLASH
-&bt BT_NXT   &to 6        &none       &lt 5 ESCAPE  &kp TAB  &lt 1 SPACE  &lt 2 ENTER  &kp BACKSPACE                                       &bt BT_CLR
+&bt BT_NXT   &to 7        &none       &lt 6 ESCAPE  &kp TAB  &lt 1 SPACE  &lt 3 ENTER  &kp BACKSPACE                                       &bt BT_CLR
             >;
         };
 
@@ -78,6 +78,15 @@
 &mt LSHFT LS(NUMBER_7)  &mt LCTRL LA(Q)  &mt LALT LA(NUMBER_7)  &mt LGUI LS(NUMBER_8)  &kp LEFT_BRACKET                     &kp LA(GRAVE)     &mt RGUI LS(NUMBER_9)  &mt RALT LA(NUMBER_0)  &mt RCTRL LS(MINUS)  &mt RSHFT LA(MINUS)
 &kp NUBS                &kp LA(E)        &kp GRAVE              &kp LA(NUMBER_8)       &kp SEMI                             &kp SINGLE_QUOTE  &kp LA(NUMBER_9)       &kp LS(GRAVE)          &kp NON_US_HASH      &kp EQUAL
 &trans                  &trans           &trans                 &trans                 &trans            &trans  &kp MINUS  &kp DELETE                                                                           &trans
+            >;
+        };
+
+        layer_8 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans                          &trans
             >;
         };
 
@@ -94,8 +103,8 @@
         mouse_layer {
             label = "MOUSE";
             bindings = <
-&lt 5 LSHIFT  &mkp MB3   &mkp MB1   &mkp MB2   &none                   &none   &kp PG_UP      &kp K_SCROLL_UP    &none  &none
-&lt 4 LSHIFT  &mkp MCLK  &mkp LCLK  &mkp RCLK  &none                   &none   &kp PAGE_DOWN  &kp K_SCROLL_DOWN  &none  &none
+&lt 6 LSHIFT  &mkp MB3   &mkp MB1   &mkp MB2   &none                   &none   &kp PG_UP      &kp K_SCROLL_UP    &none  &none
+&lt 5 LSHIFT  &mkp MCLK  &mkp LCLK  &mkp RCLK  &none                   &none   &kp PAGE_DOWN  &kp K_SCROLL_DOWN  &none  &none
 &none         &none      &none      &none      &none                   &none   &none          &none              &none  &none
 &trans        &trans     &trans     &trans     &trans  &trans  &trans  &trans                                           &trans
             >;
@@ -127,7 +136,7 @@
 &kp Q        &kp W        &kp E       &kp R         &kp T                              &kp Y          &kp U       &kp I       &kp O        &kp P
 &mt LSHFT A  &mt LCTRL S  &mt LALT D  &mt LGUI F    &kp G                              &kp H          &mt RGUI J  &mt RALT K  &mt RCTRL L  &mt RSHFT RBKT
 &kp Z        &kp X        &kp C       &kp V         &kp B                              &kp N          &kp M       &kp COMMA   &kp DOT      &kp SLASH
-&bt BT_NXT   &to 0        &none       &lt 5 ESCAPE  &kp TAB  &lt 1 SPACE  &lt 7 ENTER  &kp BACKSPACE                                       &bt BT_CLR
+&bt BT_NXT   &to 0        &none       &lt 6 ESCAPE  &kp TAB  &lt 1 SPACE  &lt 8 ENTER  &kp BACKSPACE                                       &bt BT_CLR
             >;
         };
 
