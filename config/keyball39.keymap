@@ -104,10 +104,10 @@
         mouse_layer {
             label = "MOUSE";
             bindings = <
-&lt 6 LSHIFT  &mkp MB3   &mkp MB1   &mkp MB2   &none                   &none   &kp PG_UP      &kp K_SCROLL_UP    &none  &none
-&lt 5 LSHIFT  &mkp MCLK  &mkp LCLK  &mkp RCLK  &none                   &none   &kp PAGE_DOWN  &kp K_SCROLL_DOWN  &none  &none
-&none         &none      &none      &none      &none                   &none   &none          &none              &none  &none
-&trans        &trans     &trans     &trans     &trans  &trans  &trans  &trans                                           &trans
+&lt 6 LSHIFT  &mkp MB3   &mkp MB1   &mkp MB2   &trans                  &trans  &trans  &trans  &trans  &trans
+&lt 5 LSHIFT  &mkp MCLK  &mkp LCLK  &mkp RCLK  &trans                  &trans  &trans  &trans  &trans  &trans
+&trans        &trans     &trans     &trans     &trans                  &trans  &trans  &trans  &trans  &trans
+&trans        &trans     &trans     &trans     &trans  &trans  &trans  &trans                          &trans
             >;
         };
 
