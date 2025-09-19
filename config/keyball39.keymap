@@ -67,7 +67,7 @@
 &kp Q        &kp W        &kp E       &kp R         &kp T                              &kp Y          &kp U       &kp I       &kp O        &kp P
 &mt LSHFT A  &mt LCTRL S  &mt LALT D  &mt LGUI F    &kp G                              &kp H          &mt RGUI J  &mt RALT K  &mt RCTRL L  &mt RSHFT RBKT
 &kp Z        &kp X        &kp C       &kp V         &kp B                              &kp N          &kp M       &kp COMMA   &kp DOT      &kp SLASH
-&bt BT_NXT   &to 1        &none       &lt 4 ESCAPE  &kp TAB  &lt 2 SPACE  &lt 3 ENTER  &kp BACKSPACE                                       &bt BT_CLR
+&bt BT_NXT   &to 1        &none       &lt 8 ESCAPE  &kp TAB  &lt 2 SPACE  &lt 3 ENTER  &kp BACKSPACE                                       &bt BT_CLR
             >;
         };
 
@@ -77,7 +77,7 @@
 &kp Q        &kp W        &kp E       &kp R         &kp T                              &kp Y          &kp U       &kp I       &kp O        &kp P
 &mt LSHFT A  &mt LCTRL S  &mt LALT D  &mt LGUI F    &kp G                              &kp H          &mt RGUI J  &mt RALT K  &mt RCTRL L  &mt RSHFT RBKT
 &kp Z        &kp X        &kp C       &kp V         &kp B                              &kp N          &kp M       &kp COMMA   &kp DOT      &kp SLASH
-&bt BT_NXT   &to 0        &none       &lt 4 ESCAPE  &kp TAB  &lt 2 SPACE  &lt 7 ENTER  &kp BACKSPACE                                       &bt BT_CLR
+&bt BT_NXT   &to 0        &none       &lt 8 ESCAPE  &kp TAB  &lt 2 SPACE  &lt 7 ENTER  &kp BACKSPACE                                       &bt BT_CLR
             >;
         };
 
@@ -104,10 +104,10 @@
         mouse_layer {
             label = "MOUSE";
             bindings = <
-&lt 6 LSHIFT  &mkp MB3   &mkp MB1   &mkp MB2   &trans                  &trans  &trans  &trans  &trans  &trans
-&lt 5 LSHIFT  &mkp MCLK  &mkp LCLK  &mkp RCLK  &trans                  &trans  &trans  &trans  &trans  &trans
-&trans        &trans     &trans     &trans     &trans                  &trans  &trans  &trans  &trans  &trans
-&trans        &trans     &trans     &trans     &trans  &trans  &trans  &trans                          &trans
+&trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans                          &trans
             >;
         };
 
@@ -138,6 +138,16 @@
 &trans     &trans     &trans     &trans        &kp PAGE_DOWN                    &kp END   &kp LEFT      &kp DOWN  &kp RIGHT      &kp F11
 &kp F1     &kp F2     &kp F3     &kp F4        &kp F5                           &kp F6    &kp F7        &kp F8    &kp F9         &kp F10
 &trans     &trans     &trans     &kp C_VOL_DN  &kp C_VOLUME_UP  &trans  &trans  &trans                                           &trans
+            >;
+        };
+
+        MouseButtons {
+            label = "MBTN";
+            bindings = <
+&lt 6 LSHIFT  &mkp MB3   &mkp MB1   &mkp MB2   &trans                  &trans  &trans  &trans  &trans  &trans
+&lt 5 LSHIFT  &mkp MCLK  &mkp LCLK  &mkp RCLK  &trans                  &trans  &trans  &trans  &trans  &trans
+&trans        &trans     &trans     &trans     &trans                  &trans  &trans  &trans  &trans  &trans
+&trans        &trans     &trans     &trans     &trans  &trans  &trans  &trans                          &trans
             >;
         };
     };
