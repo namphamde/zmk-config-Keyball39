@@ -20,7 +20,7 @@ layers:
   - {t: J, h: RGUI}
   - {t: K, h: '$$mdi:apple-keyboard-option$$'}
   - {t: L, h: '$$mdi:apple-keyboard-control$$'}
-  - {t: ']', h: '$$mdi:apple-keyboard-shift$$', s: '}'}
+  - {t: '=', h: '$$mdi:apple-keyboard-shift$$', s: +}
   - Z
   - X
   - C
@@ -30,7 +30,7 @@ layers:
   - M
   - {t: ',', s: <}
   - {t: ., s: '>'}
-  - {t: /, s: '?'}
+  - {t: '-', s: _}
   - {h: '$$mdi:arrow-down-bold$$', s: '$$mdi:bluetooth-connect$$'}
   - {t: WIN, h: toggle}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -341,7 +341,7 @@ layers:
   - {t: '}', h: '$$mdi:apple-keyboard-option$$'}
   - {t: '?', h: '$$mdi:apple-keyboard-control$$'}
   - {t: \, h: '$$mdi:apple-keyboard-shift$$', s: '|'}
-  - NUBS
+  - '~'
   - Alt+Sft+2
   - <
   - {t: '[', s: '{'}
@@ -350,7 +350,7 @@ layers:
   - {t: ']', s: '}'}
   - '>'
   - '#'
-  - {t: '=', s: +}
+  - {t: '''', s: '"'}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
