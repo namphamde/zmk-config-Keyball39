@@ -331,24 +331,24 @@ layers:
   - '8'
   - '9'
   - '0'
-  - {t: Sft+7, h: '$$mdi:apple-keyboard-shift$$'}
-  - {t: Alt+Q, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: /, h: '$$mdi:apple-keyboard-shift$$', s: '?'}
+  - {t: '@', h: '$$mdi:apple-keyboard-control$$'}
   - {t: '{', h: '$$mdi:apple-keyboard-option$$'}
   - {t: (, h: '$$mdi:apple-keyboard-command$$'}
   - '&umlaut_u'
   - {t: Alt+`, s: Alt+~}
   - {t: ), h: RGUI}
   - {t: '}', h: '$$mdi:apple-keyboard-option$$'}
-  - {t: Sft+-, h: '$$mdi:apple-keyboard-control$$', s: Sft+_}
-  - {t: Alt+-, h: '$$mdi:apple-keyboard-shift$$', s: Alt+_}
+  - {t: '?', h: '$$mdi:apple-keyboard-control$$'}
+  - {t: \, h: '$$mdi:apple-keyboard-shift$$', s: '|'}
   - NUBS
-  - Alt+E
-  - {t: '`', s: '~'}
-  - Alt+8
+  - Alt+Sft+2
+  - <
+  - {t: '[', s: '{'}
   - '&umlaut_o'
   - '&umlaut_a'
-  - Alt+9
-  - {t: Sft+`, s: Sft+~}
+  - {t: ']', s: '}'}
+  - '>'
   - '#'
   - {t: '=', s: +}
   - {t: '$$mdi:transfer$$', type: trans}
