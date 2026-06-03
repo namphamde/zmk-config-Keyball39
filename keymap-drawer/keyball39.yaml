@@ -6,7 +6,7 @@ layers:
   - E
   - R
   - T
-  - Y
+  - Z
   - U
   - I
   - O
@@ -21,7 +21,7 @@ layers:
   - {t: K, h: '$$mdi:apple-keyboard-option$$'}
   - {t: L, h: '$$mdi:apple-keyboard-control$$'}
   - {t: '=', h: '$$mdi:apple-keyboard-shift$$', s: +}
-  - Z
+  - Y
   - X
   - C
   - V
@@ -332,7 +332,7 @@ layers:
   - '9'
   - '0'
   - {t: /, h: '$$mdi:apple-keyboard-shift$$', s: '?'}
-  - {t: '@', h: '$$mdi:apple-keyboard-control$$'}
+  - {t: NUBS, h: '$$mdi:apple-keyboard-control$$'}
   - {t: '{', h: '$$mdi:apple-keyboard-option$$'}
   - {t: (, h: '$$mdi:apple-keyboard-command$$'}
   - '&umlaut_u'
