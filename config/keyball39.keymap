@@ -165,10 +165,10 @@
         number_layer {
             label = "NUM";
             bindings = <
-&kp NUMBER_1            &kp NUMBER_2     &kp NUMBER_3         &kp NUMBER_4                       &kp NUMBER_5                     &kp NUMBER_6   &kp NUMBER_7                &kp NUMBER_8          &kp NUMBER_9         &kp NUMBER_0
-&mt LSHFT LS(NUMBER_7)  &mt LCTRL LA(Q)  &mt LALT LEFT_BRACE  &mt LEFT_COMMAND LEFT_PARENTHESIS  &umlaut_u                        &kp LA(GRAVE)  &mt RGUI RIGHT_PARENTHESIS  &mt RALT RIGHT_BRACE  &mt RCTRL LS(MINUS)  &mt RSHFT LA(MINUS)
-&kp NUBS                &kp LA(E)        &kp GRAVE            &kp LA(NUMBER_8)                   &umlaut_o                        &umlaut_a      &kp LA(NUMBER_9)            &kp LS(GRAVE)         &kp NON_US_HASH      &kp EQUAL
-&trans                  &trans           &trans               &trans                             &trans        &trans  &kp MINUS  &kp DELETE                                                                            &trans
+&kp NUMBER_1     &kp NUMBER_2          &kp NUMBER_3         &kp NUMBER_4                       &kp NUMBER_5                     &kp NUMBER_6   &kp NUMBER_7                &kp NUMBER_8          &kp NUMBER_9        &kp NUMBER_0
+&mt LSHFT SLASH  &mt LCTRL AT_SIGN     &mt LALT LEFT_BRACE  &mt LEFT_COMMAND LEFT_PARENTHESIS  &umlaut_u                        &kp LA(GRAVE)  &mt RGUI RIGHT_PARENTHESIS  &mt RALT RIGHT_BRACE  &mt RCTRL QUESTION  &mt RSHFT BACKSLASH
+&kp NUBS         &kp LA(LS(NUMBER_2))  &kp LESS_THAN        &kp LEFT_BRACKET                   &umlaut_o                        &umlaut_a      &kp RIGHT_BRACKET           &kp GREATER_THAN      &kp NON_US_HASH     &kp EQUAL
+&trans           &trans                &trans               &trans                             &trans        &trans  &kp MINUS  &kp DELETE                                                                           &trans
             >;
         };
     };
