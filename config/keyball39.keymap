@@ -96,8 +96,8 @@
             label = "WIN";
             bindings = <
 &kp Q        &kp W        &kp E       &kp R         &kp T                              &kp Y          &kp U       &kp I       &kp O        &kp P
-&mt LSHFT A  &mt LCTRL S  &mt LALT D  &mt LGUI F    &kp G                              &kp H          &mt RGUI J  &mt RALT K  &mt RCTRL L  &mt RSHFT RBKT
-&kp Z        &kp X        &kp C       &kp V         &kp B                              &kp N          &kp M       &kp COMMA   &kp DOT      &kp SLASH
+&mt LSHFT A  &mt LCTRL S  &mt LALT D  &mt LGUI F    &kp G                              &kp H          &mt RGUI J  &mt RALT K  &mt RCTRL L  &mt RSHFT EQUAL
+&kp Z        &kp X        &kp C       &kp V         &kp B                              &kp N          &kp M       &kp COMMA   &kp DOT      &kp MINUS
 &bt BT_NXT   &to 0        &none       &lt 2 ESCAPE  &kp TAB  &lt 8 SPACE  &lt 7 ENTER  &kp BACKSPACE                                       &bt BT_CLR
             >;
         };
@@ -165,10 +165,10 @@
         number_layer {
             label = "NUM";
             bindings = <
-&kp NUMBER_1     &kp NUMBER_2          &kp NUMBER_3         &kp NUMBER_4                       &kp NUMBER_5                     &kp NUMBER_6   &kp NUMBER_7                &kp NUMBER_8          &kp NUMBER_9        &kp NUMBER_0
-&mt LSHFT SLASH  &mt LCTRL AT_SIGN     &mt LALT LEFT_BRACE  &mt LEFT_COMMAND LEFT_PARENTHESIS  &umlaut_u                        &kp LA(GRAVE)  &mt RGUI RIGHT_PARENTHESIS  &mt RALT RIGHT_BRACE  &mt RCTRL QUESTION  &mt RSHFT BACKSLASH
-&kp TILDE        &kp LA(LS(NUMBER_2))  &kp LESS_THAN        &kp LEFT_BRACKET                   &umlaut_o                        &umlaut_a      &kp RIGHT_BRACKET           &kp GREATER_THAN      &kp HASH            &kp SQT
-&trans           &trans                &trans               &trans                             &trans        &trans  &kp MINUS  &kp DELETE                                                                           &trans
+&kp NUMBER_1     &kp NUMBER_2          &kp NUMBER_3         &kp NUMBER_4                       &kp NUMBER_5                     &kp NUMBER_6  &kp NUMBER_7                &kp NUMBER_8          &kp NUMBER_9        &kp NUMBER_0
+&mt LSHFT SLASH  &mt LCTRL AT_SIGN     &mt LALT LEFT_BRACE  &mt LEFT_COMMAND LEFT_PARENTHESIS  &umlaut_u                        &kp LA(S)     &mt RGUI RIGHT_PARENTHESIS  &mt RALT RIGHT_BRACE  &mt RCTRL QUESTION  &mt RSHFT BACKSLASH
+&kp GRAVE        &kp LA(LS(NUMBER_2))  &kp LESS_THAN        &kp LEFT_BRACKET                   &umlaut_o                        &umlaut_a     &kp RIGHT_BRACKET           &kp GREATER_THAN      &kp SEMI            &kp SQT
+&trans           &trans                &trans               &trans                             &trans        &trans  &kp MINUS  &kp DELETE                                                                          &trans
             >;
         };
     };
