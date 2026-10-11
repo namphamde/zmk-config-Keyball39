@@ -31,4 +31,23 @@ must capitalize, and typing a quote/backtick/caret followed by `a` must produce
 two separate characters on Windows. Confirm the new firmware on the keyboard;
 changing the Windows input layout alone does not update its key bindings.
 
+## Bluetooth profile selection
+
+Hold the former Bluetooth-next key (bottom left) and press a key in the right
+top row to select a profile and its mode together:
+
+| Key | Bluetooth profile | Mode |
+| --- | --- | --- |
+| P | 1 | WIN |
+| O | 2 | WIN |
+| I | 3 | MAC |
+| U | 4 | WIN |
+| Z | 5 | WIN |
+
+The selector works from either mode. Z refers to the physical Z position in
+the current base layout, next to U. Release the selector key to resume typing;
+the chosen mode stays active. While holding it, you can select another profile.
+Pressing the selector alone no longer cycles profiles. Other keys in the menu
+are disabled to avoid typing to a device while choosing it.
+
 <img src="keymap-drawer/keyball39.svg" >

@@ -1,6 +1,7 @@
 #define DEFAULT 0
 #define NUM     8
 #define WIN_NUM 9
+#define BT_SELECT 10
 #define FUN     3
 #define MOUSE   4
 #define SCROLL  5
@@ -94,6 +95,19 @@
     };
 
     macros {
+        // Parameters: zero-based Bluetooth profile, then base mode layer.
+        bt_mode: bt_mode {
+            compatible = "zmk,behavior-macro-two-param";
+            #binding-cells = <2>;
+            wait-ms = <0>;
+            tap-ms = <0>;
+            bindings = <&macro_press>,
+                       <&macro_param_1to2>, <&bt BT_SEL MACRO_PLACEHOLDER>,
+                       <&macro_param_2to1>, <&to MACRO_PLACEHOLDER>,
+                       // &to clears other layers; keep this menu until its key is released.
+                       <&mo BT_SELECT>;
+        };
+
         // US International: a dead key followed by Space emits just the character.
         // Retain a held Shift so GRAVE becomes ~ and SQT becomes a double quote.
         win_literal: win_literal {
@@ -142,7 +156,7 @@
 &kp Q        &kp W        &kp E       &kp R         &kp T                              &kp Z          &kp U       &kp I       &kp O        &kp P
 &mt LSHFT A  &mt LCTRL S  &mt LALT D  &mt LGUI F    &kp G                              &kp H          &mt RGUI J  &mt RALT K  &mt RCTRL L  &mt RSHFT EQUAL
 &kp Y        &kp X        &kp C       &kp V         &kp B                              &kp N          &kp M       &kp COMMA   &kp DOT      &kp MINUS
-&bt BT_NXT   &to 1        &none       &lt 2 ESCAPE  &kp TAB  &lt NUM SPACE  &lt 3 ENTER  &kp BACKSPACE                                       &bt BT_CLR
+&mo BT_SELECT &to 1        &none       &lt 2 ESCAPE  &kp TAB  &lt NUM SPACE  &lt 3 ENTER  &kp BACKSPACE                                       &bt BT_CLR
             >;
         };
 
@@ -152,7 +166,7 @@
 &kp Q        &kp W        &kp E       &kp R         &kp T                              &kp Z          &kp U       &kp I       &kp O        &kp P
 &mt LSHFT A  &mt LCTRL S  &mt LALT D  &mt LGUI F    &kp G                              &kp H          &mt RGUI J  &mt RALT K  &mt RCTRL L  &mt RSHFT EQUAL
 &kp Y        &kp X        &kp C       &kp V         &kp B                              &kp N          &kp M       &kp COMMA   &kp DOT      &kp MINUS
-&bt BT_NXT   &to 0        &none       &lt 2 ESCAPE  &kp TAB  &lt WIN_NUM SPACE  &lt 7 ENTER  &kp BACKSPACE                                       &bt BT_CLR
+&mo BT_SELECT &to 0        &none       &lt 2 ESCAPE  &kp TAB  &lt WIN_NUM SPACE  &lt 7 ENTER  &kp BACKSPACE                                       &bt BT_CLR
             >;
         };
 
@@ -235,6 +249,17 @@
 &mt LSHFT SLASH  &win_literal_mt LCTRL GRAVE  &mt LALT LEFT_BRACE  &mt LEFT_COMMAND LEFT_PARENTHESIS  &kp RA(Y)                        &win_sharp_s &mt RGUI RIGHT_PARENTHESIS  &mt RALT RIGHT_BRACE  &mt RCTRL QUESTION  &mt RSHFT BACKSLASH
 &win_literal GRAVE &win_euro                 &kp LESS_THAN        &kp LEFT_BRACKET                   &kp RA(P)                        &kp RA(Q)    &kp RIGHT_BRACKET           &kp GREATER_THAN      &kp SEMI            &win_literal SQT
 &trans           &trans                       &trans               &trans                             &trans        &trans  &kp MINUS  &kp DELETE                                                                          &trans
+            >;
+        };
+
+        // Hold the former BT_NXT key and select by the base-layer letter position.
+        bluetooth_selection {
+            label = "BT";
+            bindings = <
+&none  &none  &none  &none  &none                  &bt_mode 4 1  &bt_mode 3 1  &bt_mode 2 DEFAULT  &bt_mode 1 1  &bt_mode 0 1
+&none  &none  &none  &none  &none                  &none         &none         &none               &none         &none
+&none  &none  &none  &none  &none                  &none         &none         &none               &none         &none
+&trans &none  &none  &none  &none  &none  &none  &none                                                           &none
             >;
         };
     };

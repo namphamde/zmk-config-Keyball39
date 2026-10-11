@@ -117,6 +117,12 @@ parse_config:
     type: trans
 
   raw_binding_map:
+    # Bluetooth profiles are displayed as 1-5; ZMK stores them as 0-4.
+    "&bt_mode 0 1": {tap: 'BT 1', hold: 'WIN'}
+    "&bt_mode 1 1": {tap: 'BT 2', hold: 'WIN'}
+    "&bt_mode 2 DEFAULT": {tap: 'BT 3', hold: 'MAC'}
+    "&bt_mode 3 1": {tap: 'BT 4', hold: 'WIN'}
+    "&bt_mode 4 1": {tap: 'BT 5', hold: 'WIN'}
     # Matching Mac NUM / Windows US International WNUM characters
     "&umlaut_u": {tap: 'ü', shifted: 'Ü'}
     "&umlaut_o": {tap: 'ö', shifted: 'Ö'}
