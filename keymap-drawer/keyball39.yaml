@@ -46,7 +46,7 @@ layers:
   - E
   - R
   - T
-  - Y
+  - Z
   - U
   - I
   - O
@@ -61,7 +61,7 @@ layers:
   - {t: K, h: '$$mdi:apple-keyboard-option$$'}
   - {t: L, h: '$$mdi:apple-keyboard-control$$'}
   - {t: '=', h: '$$mdi:apple-keyboard-shift$$', s: +}
-  - Z
+  - Y
   - X
   - C
   - V
@@ -76,7 +76,7 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:keyboard-esc$$', h: MBTN}
   - $$mdi:keyboard-tab$$
-  - {t: '$$mdi:keyboard-space$$', h: NUM}
+  - {t: '$$mdi:keyboard-space$$', h: WNUM}
   - {t: '$$mdi:keyboard-return$$', h: WFUN}
   - {t: '$$mdi:backspace$$', type: backspace}
   - $$mdi:bluetooth-off$$
@@ -326,27 +326,67 @@ layers:
   - '3'
   - '4'
   - '5'
-  - '6'
+  - {t: '6', s: ^}
   - '7'
   - '8'
   - '9'
   - '0'
   - {t: /, h: '$$mdi:apple-keyboard-shift$$', s: '?'}
-  - {t: NUBS, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: '`', h: '$$mdi:apple-keyboard-control$$', s: '~'}
   - {t: '{', h: '$$mdi:apple-keyboard-option$$'}
   - {t: (, h: '$$mdi:apple-keyboard-command$$'}
-  - '&umlaut_u'
-  - Alt+S
+  - {t: ü, s: Ü}
+  - {t: ß, s: Í}
   - {t: ), h: RGUI}
   - {t: '}', h: '$$mdi:apple-keyboard-option$$'}
   - {t: '?', h: '$$mdi:apple-keyboard-control$$'}
   - {t: \, h: '$$mdi:apple-keyboard-shift$$', s: '|'}
   - {t: '`', s: '~'}
-  - Alt+Sft+2
+  - €
   - <
   - {t: '[', s: '{'}
-  - '&umlaut_o'
-  - '&umlaut_a'
+  - {t: ö, s: Ö}
+  - {t: ä, s: Ä}
+  - {t: ']', s: '}'}
+  - '>'
+  - {t: ;, s: ':'}
+  - {t: '''', s: '"'}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held}
+  - {t: '-', s: _}
+  - $$mdi:backspace-reverse-outline$$
+  - {t: '$$mdi:transfer$$', type: trans}
+  WNUM:
+  - '1'
+  - '2'
+  - '3'
+  - '4'
+  - '5'
+  - {t: '6', s: ^}
+  - '7'
+  - '8'
+  - '9'
+  - '0'
+  - {t: /, h: '$$mdi:apple-keyboard-shift$$', s: '?'}
+  - {t: '`', h: '$$mdi:apple-keyboard-control$$', s: '~'}
+  - {t: '{', h: '$$mdi:apple-keyboard-option$$'}
+  - {t: (, h: '$$mdi:apple-keyboard-command$$'}
+  - {t: ü, s: Ü}
+  - {t: ß, s: Í}
+  - {t: ), h: RGUI}
+  - {t: '}', h: '$$mdi:apple-keyboard-option$$'}
+  - {t: '?', h: '$$mdi:apple-keyboard-control$$'}
+  - {t: \, h: '$$mdi:apple-keyboard-shift$$', s: '|'}
+  - {t: '`', s: '~'}
+  - €
+  - <
+  - {t: '[', s: '{'}
+  - {t: ö, s: Ö}
+  - {t: ä, s: Ä}
   - {t: ']', s: '}'}
   - '>'
   - {t: ;, s: ':'}

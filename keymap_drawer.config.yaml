@@ -117,6 +117,29 @@ parse_config:
     type: trans
 
   raw_binding_map:
+    # Matching Mac NUM / Windows US International WNUM characters
+    "&umlaut_u": {tap: 'ü', shifted: 'Ü'}
+    "&umlaut_o": {tap: 'ö', shifted: 'Ö'}
+    "&umlaut_a": {tap: 'ä', shifted: 'Ä'}
+    "&kp RA(Y)": {tap: 'ü', shifted: 'Ü'}
+    "&kp RA(P)": {tap: 'ö', shifted: 'Ö'}
+    "&kp RA(Q)": {tap: 'ä', shifted: 'Ä'}
+    "&kp LA(S)": {tap: 'ß', shifted: 'Í'}
+    "&win_sharp_s": {tap: 'ß', shifted: 'Í'}
+    "&kp LA(LS(NUMBER_2))": '€'
+    "&win_euro": '€'
+    "&kp NUMBER_6": {tap: '6', shifted: '^'}
+    "&win_six": {tap: '6', shifted: '^'}
+    "&win_literal GRAVE": {tap: '`', shifted: '~'}
+    "&win_literal SQT": {tap: "'", shifted: '"'}
+    "&mt LCTRL NUBS":
+      tap: '`'
+      shifted: '~'
+      hold: $$mdi:apple-keyboard-control$$
+    "&win_literal_mt LCTRL GRAVE":
+      tap: '`'
+      shifted: '~'
+      hold: $$mdi:apple-keyboard-control$$
     # Layers
     "&ltq 1 BACKSPACE":
       tap:  $$mdi:backspace$$
