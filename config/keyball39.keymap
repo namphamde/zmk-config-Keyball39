@@ -30,6 +30,15 @@
     // custom shift using mod-morph 
 
     behaviors {
+        // Mask either home-row Shift only while sending the macOS umlaut dead key.
+        // Both branches send Option+U; the shifted branch suppresses Shift.
+        umlaut_deadkey: umlaut_deadkey {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp LA(U)>, <&kp LA(U)>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
         cmqus: comma_question {
             compatible = "zmk,behavior-mod-morph";
             label = "COMMA_QUESTION";
@@ -60,21 +69,21 @@
         umlaut_u: umlaut_u {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LA(U) &kp U>;
+            bindings = <&umlaut_deadkey &kp U>;
             label = "UMLAUT_U";
         };
 
         umlaut_o: umlaut_o {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LA(U) &kp O>;
+            bindings = <&umlaut_deadkey &kp O>;
             label = "UMLAUT_O";
         };
 
         umlaut_a: umlaut_a {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LA(U) &kp A>;
+            bindings = <&umlaut_deadkey &kp A>;
             label = "UMLAUT_A";
         };
     };
